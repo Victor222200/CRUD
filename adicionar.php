@@ -11,31 +11,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-<!-- Listagem -->
-<div class="container d-flex  flex-column" >
-  
-  <div class="col-5">
-    <a href='adicionar.php' class='btn btn-primary'>Adicionar Usuario</a>
-    <a class='btn btn-danger'>Excluir usuarios </a>
+  <div class="container">
+  <form action="recebe.php" method="post">
+      <div class="form-group">
+          <label for="exampleFormControlInput1">Nome </label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name='nome'>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Sobrenome</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name='sobrenome'>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" name='email'>
+        </div>
+        <button > Enviar </button>
+      </form>
   </div>
-
-
-  <table class="table table-bordered table-hover table-checkable" id="kt_datatable" style="margin-top: 13px !important">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nome/Nome Fantasia</th>
-                            <th>Editar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                       <tr>
-                            <td>1</td>
-                            <td>Raul Mota</td>
-                            <td><buttom class='btn btn-primary'>Editar </buttom> </td>
-                    </tbody>
-                </table>
-</div>
 
 
 </body>
